@@ -1,53 +1,49 @@
-programa
-{
-	
-//Lista de exercícios -4
-	funcao inicio()
-	{
-		//Declarando variáveis
-		inteiro peso,quantMorango,quantMaca
-		real valorMorango 
-		real valorMaca 
-		real valorTotal
-		real desconto
+programa {
+    //Lista de exercícios -4
+    funcao inicio() {
+        //Declarando variáveis
+        inteiro peso, quantMorango, quantMaca
+        real valorMorango 
+        real valorMaca 
+        real valorTotal
+        real desconto
 
-		//Pedindo dados
-		escreva("\nDigite a quantidade em Kg de morangos: ")
-		leia(quantMorango)
-		escreva("\nDigite a quantidade em Kg de maçãs: ")
-		leia(quantMaca)
+        //Pedindo dados
+        escreva("\nDigite a quantidade em Kg de morangos: ")
+        leia(quantMorango)
+        escreva("\nDigite a quantidade em Kg de maçãs: ")
+        leia(quantMaca)
 
-		
-		//Calculando valores
-		valorMorango = 2.50
-		valorMaca = 1.80
-		peso = quantMorango + quantMaca
-		valorTotal = valorMorango + valorMaca
-		
-		//Mostrando quantidade de frutas
-		escreva("\nQuantidade de morangos: ",quantMorango)
-		escreva("\nQuantidade de maçãs: ",quantMaca)		
-		
-		//Desconto
-		se(peso>8 ou valorTotal >25.00 ){
-			desconto = valorTotal * 0.1
-			valorTotal = valorTotal- desconto
-			escreva("\nCom 10% de desconto:-  ",desconto)	
-		}		
-		
-		
-		//Mostrando preço de acordo com a tabela
-		se(peso>5 e valorTotal<25){
-			valorMorango = 2.20
-			valorMaca = 1.50
-			escreva("\nValor total: R$",valorTotal)
-		}senao{
-			escreva("\nValor total: R$",valorTotal)
-		}
+        //Calculando valores
+        valorMorango = 2.50
+        valorMaca = 1.80
+        valorTotal = valorMorango + valorMaca
+        peso = quantMorango + quantMaca
+        
 
+        //Mostrando quantidade de frutas
+        escreva("\nQuantidade de morangos: ",quantMorango)
+        escreva("\nQuantidade de maçãs: ",quantMaca)    
 
-		
-	}
+        //Mostrando preço de acordo com a tabela
+        se (peso > 5 e valorTotal < 25.00) {
+            valorMorango = 2.20
+            valorMaca = 1.50
+            valorTotal = (quantMorango * valorMorango) + (quantMaca * valorMaca)
+            escreva("\nValor total: R$", valorTotal)
+        }
+        senao{
+            valorTotal = (quantMorango * valorMorango) + (quantMaca * valorMaca)
+            escreva("\nValor total: R$", valorTotal)
+        }
+
+        //Desconto
+        se (peso > 8 ou valorTotal > 25.00) {
+            desconto = valorTotal * 0.1
+            valorTotal = valorTotal - desconto
+            escreva("\nDesconto de 10% aplicado!")
+        }    
+    }
 }
 
 /* $$$ Portugol Studio $$$ 
