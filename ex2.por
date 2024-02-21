@@ -1,6 +1,6 @@
 programa
 {
-	//Lista de exercícios -3
+	//Lista de exercícios -2
 	funcao inicio()
 	{
 		//Declarando variáveis
