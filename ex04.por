@@ -15,8 +15,8 @@ programa {
         escreva("\nMaçã : R$ 1,80/Kg")
         escreva("\n===ACIMA DE 5Kg===")
         escreva("\nMorango : R$ 2,20/Kg")	
-	   escreva("\nMaçã : R$ 1,50/Kg")
-	   escreva("\n*** Desconto de 10% acima de 8Kg ou R$ 25,00 ***")	
+	escreva("\nMaçã : R$ 1,50/Kg")
+	escreva("\n*** Desconto de 10% acima de 8Kg ou R$ 25,00 ***")	
 	
         //Pedindo dados
         escreva("\nDigite a quantidade em Kg de morangos: ")
